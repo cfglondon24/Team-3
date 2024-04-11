@@ -1,3 +1,8 @@
+### Running a Virtual Environment
+
+On windows, navigate to the activate file in your venv Scripts folder
+- **`\path\to\file\activate.bat`**
+
 ### Django Commands Reference
 
 Here's a concise explanation of essential Django commands:
@@ -14,7 +19,7 @@ Here's a concise explanation of essential Django commands:
 - **`py manage.py runserver`**
   *Purpose*: Starts the Django development server, allowing you to preview your project locally by serving it at `localhost:8000`.
 
-- **`py manage.py startapp [appname]`**
+- **`django-admin startapp [appname]`**
   *Purpose*: Creates a new Django app within the project structure, encapsulating related functionality, models, views, and templates.
 
 - **`py manage.py startproject [projname]`**
