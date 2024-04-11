@@ -1,10 +1,39 @@
-.characterimg {
-    width: 25px;
-    height: auto;
-    margin: 0 auto; /* Add this line to center the element horizontally */
-    display: flex; /* Add this line to enable flexbox */
-    justify-content: center; /* Add this line to center the element horizontally within the flex container */
+.img-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
 }
+
+.image {
+    margin: 10px;
+}
+
+img {
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #A359A0;
+    background-color: transparent;
+    border: 2px solid #A359A0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+button:hover {
+    background-color: #A359A0;
+    color: white;
+}
+
 
 .footer {
     position: flex;
