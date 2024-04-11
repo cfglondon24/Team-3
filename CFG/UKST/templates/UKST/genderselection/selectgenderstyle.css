@@ -11,6 +11,7 @@
 .h1 {
     font-style: italic;
     justify-content: center;
+    margin: 10px;
   }  
 
   .topnav {
@@ -54,8 +55,10 @@ body {
   }
 
 img {
+    max-width: 100%;
     width: 200px;
     height: 200px;
+    /* max-height: 100%; */
     display: block;
     margin: 0 auto 10px;
     border-radius: 5px;
@@ -82,21 +85,33 @@ button:hover {
     color: white;
 }
 
+.container {
+    display: flex;
+  border: 1px solid #ffffff;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  max-width: 1250px;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .container3 {
     background-color: #6d6e71;
-    overflow: hidden;
-      /* border-radius: 25px; */
-    color: white;
-    text-align: center;
-      /* border-bottom: 50px; */
-    height: 50px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 0;
+  overflow: hidden;
+    /* border-radius: 25px; */
+  color: white;
+  text-align: center;
+    /* border-bottom: 50px; */
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+    
   }
   
   .footerlink {
@@ -136,4 +151,3 @@ button:hover {
       padding: 0px 20px;
     }
   }
-  
