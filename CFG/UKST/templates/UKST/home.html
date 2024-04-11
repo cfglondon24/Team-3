@@ -1,4 +1,43 @@
 {% extends "UKST/base.html" %}
 {% block content %}
-    <h1>home</h1>
+
+    <!-- survey_form.html -->
+
+<form method="post">
+    {% csrf_token %}
+    <div>
+        <label for="id_age">Age:</label>
+        {{ form.age }}
+    </div>
+    <div>
+        <label for="id_gender">Gender:</label>
+        {{ form.gender }}
+    </div>
+    <div>
+        <label for="id_q1">Question 1:</label>
+        {{ form.q1 }}
+    </div>
+    <div>
+        <label for="id_q2">Question 2:</label>
+        {{ form.q2 }}
+    </div>
+    <div>
+        <label for="id_q3">Question 3:</label>
+        {{ form.q3 }}
+    </div>
+    <div>
+        <label for="id_q4">Question 4:</label>
+        {{ form.q4 }}
+    </div>
+    <div>
+        <label for="id_q5">Question 5:</label>
+        {{ form.q5 }}
+    </div>
+    <div>
+        <label for="id_q6">Question 6:</label>
+        {{ form.q6 }}
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
 {% endblock content %}
